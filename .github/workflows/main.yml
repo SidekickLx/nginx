@@ -10,6 +10,5 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: anchore/sbom-action@v0
-      with:
-        path: .
+      - name: Anchore SBOM Action
+        uses: anchore/sbom-action@v0.11.0
